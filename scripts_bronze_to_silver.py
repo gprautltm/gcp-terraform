@@ -26,7 +26,7 @@ silver_df.write \
     .option("table", "carrier-poc-497515.poc_lakehouse.silver_customer") \
     .option("parentProject", "terraform-poc-1gpr") \
     .option("temporaryGcsBucket", "gprgcs-bucket1") \
-    .option("intermediateFormat", "parquet")
+    .option("intermediateFormat", "parquet") \
     .mode("append") \
     .save()
 
