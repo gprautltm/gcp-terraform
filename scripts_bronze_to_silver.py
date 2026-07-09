@@ -25,7 +25,7 @@ silver_df.write \
     .format("bigquery") \
     .option("table", "carrier-poc-497515.poc_lakehouse.silver_customer") \
     .option("temporaryGcsBucket", "gprgcs-bucket1") \
-    .option("parentProject", "carrier-poc-497515") \
+    .option("parentProject", "terraform-poc-1gpr") \
     .mode("append") \
     .save()
 
