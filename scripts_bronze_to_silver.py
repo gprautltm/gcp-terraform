@@ -25,6 +25,7 @@ silver_df.write \
     .format("bigquery") \
     .option("table", "carrier-poc-497515.poc_lakehouse.silver_customer") \
     .option("temporaryGcsBucket", "carrier-lakehouse-demo") \
+    .option("parentProject", "carrier-poc-497515") \
     .mode("append") \
     .save()
 
